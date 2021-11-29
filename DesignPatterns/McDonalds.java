@@ -3,6 +3,14 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/* 
+    A class implimented from Restaurant interface.
+    Contains a ArrayList of the food items present
+    And 2 method implemented from the parent interface
+    -menu() and order()
+
+*/
+
 public class McDonalds implements Restaurants{
 
     ArrayList<String> foodItems;
