@@ -12,9 +12,11 @@ import java.util.Collections;
 */
 
 public class KFC implements Restaurants{
-    private ArrayList<String> foodItems;
+    static private ArrayList<String> foodItems;
 
-    public KFC(){
+    // static initialization block that runs once throughtout it's lifetime 
+   // in the starting beforecreation of the object
+    static{
         foodItems = new ArrayList<>();
         String[] array = {"Classic Zinger Meal","Super Snacker Combo","Rice Bowlz","Mingles Bucket Meal"};
         Collections.addAll(foodItems, array);

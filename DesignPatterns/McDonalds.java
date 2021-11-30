@@ -13,9 +13,11 @@ import java.util.Collections;
 
 public class McDonalds implements Restaurants{
 
-    ArrayList<String> foodItems;
+    static private ArrayList<String> foodItems;
 
-    public McDonalds(){
+    // static initialization block that runs once throughtout it's lifetime 
+   // in the starting beforecreation of the object
+    static{
         foodItems = new ArrayList<>();
         String[] array = {"McAloo","Mexican McAloo Tikki","Big Mac","Sausage Burrito"};
         Collections.addAll(foodItems, array);

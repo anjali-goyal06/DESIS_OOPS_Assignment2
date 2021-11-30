@@ -15,13 +15,16 @@ import java.util.Collections;
 
 public class Dominos implements Restaurants{
 
-    ArrayList<String> foodItems;
+    static private ArrayList<String> foodItems;
 
-    public Dominos(){                     // Contructor
+   // static initialization block that runs once throughtout it's lifetime 
+   // in the starting beforecreation of the object
+    static{
         foodItems = new ArrayList<>();
         String[] array = {"VEG PIZZA","SIDES & BEVERAGES","PASTA","Cheese pizza","Burger"};
         Collections.addAll(foodItems, array);
     }
+
 
     @Override
     public void menu() {
